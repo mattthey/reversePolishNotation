@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Calculator
 {
-    private Stack<Integer> stack;
+    private final Stack<Integer> stack;
 
     public Calculator()
     {
@@ -12,7 +12,7 @@ public class Calculator
     }
 
 
-    private boolean isNumber(String input)
+    private static boolean isNumber(String input)
     {
         try
         {

@@ -1,18 +1,17 @@
 package calculatorReversePolishNotation;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class СalculatorTest
+public class CalculatorJdkTest
 {
     @org.junit.Test
     public void isNumeric() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException
     {
         Calculator calculator = new Calculator();
-        Method isNumeric = null;
-        isNumeric = Calculator.class.getDeclaredMethod("isNumber", String.class);
+        Method isNumeric = Calculator.class.getDeclaredMethod("isNumber", String.class);
         isNumeric.setAccessible(true);
 
         assertEquals(isNumeric.invoke(calculator, "2"), true);

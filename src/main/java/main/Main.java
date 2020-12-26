@@ -6,7 +6,7 @@ import calculatorReversePolishNotation.Calculator;
 
 public class Main
 {
-    public static void main( String[] args )
+    public static void main(String[] args)
     {
         Calculator calculator = new Calculator();
         String input;
@@ -19,7 +19,8 @@ public class Main
             input = sc.nextLine();
             if (input.equals("close()"))
                 break;
-            try {
+            try
+            {
                 System.out.println(calculator.calculate(input));
             }
             catch (Exception e)
